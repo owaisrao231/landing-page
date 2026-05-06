@@ -1,1 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enlition Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
+body {
+  background: #eef3f8;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: white;
+}
+
+.navbar nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn {
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero-text span {
+  color: #007bff;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-img img {
+  width:  500px;
+  max-width: 500Px;
+}
+
+/* TRUST */
+.trust {
+  text-align: center;
+  padding: 40px 10%;
+}
+
+.trust span {
+  color: #007bff;
+}
+
+.logos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #777;
+}
+
+/* SERVICES */
+.services {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 400px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">enlition</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Projects</a>
+    <a href="#">Pricing</a>
+  </nav>
+  <button class="btn">Contact Us</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Increase Your Web Traffic With <span>Enlition</span></h1>
+    <p>Build trust to connect your brand to billions of users and grow your revenue through SEO.</p>
+    <button class="btn-primary">Get Started</button>
+  </div>
+
+  <div class="hero-img">
+    <img src="How-to-Increase-Website-Traffic.png" alt="illustration">
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <p>Trusted by over <span>20,000</span> Companies</p>
+  <div class="logos">
+    <span>Netflix</span>
+    <span>Spotify</span>
+    <span>Microsoft</span>
+    <span>Amazon</span>
+    <span>Facebook</span>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>What We Do</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>SEO Consultancy</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+      <h3>Competitor Analysis</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="card">
+      <h3>Social Media Marketing</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="about-img">
+    <img src="https://via.placeholder.com/350x250" alt="">
+  </div>
+  <div class="about-text">
+    <h2>We are here to help you with</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sed!</p>
+    <button class="btn-primary">Learn More</button>
+  </div>
+</section>
+
+</body>
+</html>
